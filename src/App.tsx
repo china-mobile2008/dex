@@ -84,6 +84,10 @@ export const handleFormData = (config) => {
   const { provider, chainIds, feeConfig, tokenPair, ...reset } = config;
   const [providerType, providerFrom] = provider?.split('-') || [];
   let feeConfigObj = {
+    '56': {
+      feePercent: 1,
+      referrerAddress: '0xc93822354dc7fd3130c0821f95d7b04b4fadedc0',
+    },
     '137': {
       feePercent: 1,
       referrerAddress: '0xc93822354dc7fd3130c0821f95d7b04b4fadedc0',
